@@ -11,7 +11,7 @@ import (
 
 func main() {
 	var sourceDirectory = "/space"
-	var destinationDirectory = "/space/escher/trunk"
+	var destinationDirectory = "/space3/escher/trunk"
 
 	if _, isDebug := os.LookupEnv("DEBUG"); isDebug {
 		logrus.SetLevel(logrus.DebugLevel)

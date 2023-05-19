@@ -31,7 +31,9 @@ INSTALL = chown root:wheel /$(EXECUTABLE) && \
 					chmod 0700 /$(EXECUTABLE) && \
 					file /$(EXECUTABLE) && \
 					ls -ali /$(EXECUTABLE) && \
-					mkdir -pv /space/escher/trunk
+					mkdir -pv /space3/escher/trunk && \
+					df -h /space && \
+					df -h /space3/escher/trunk
 
 deploy install: build
 	rsync "$(EXECUTABLE)" "$(SERVER):/$(EXECUTABLE)"
